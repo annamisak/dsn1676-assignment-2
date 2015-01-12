@@ -29,3 +29,28 @@ body {
     display: block;
     width: 100%;
 }
+
+.main {
+    background-image: url(../images/clock-face.svg)
+}
+
+.center {
+}
+
+.btn {
+}
+
+.btn-forwards {
+}
+
+.btn-backwards {
+}
+
+.hand {
+}
+
+.hand-minute {
+}
+
+.hand-hour {
+}
