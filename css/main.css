@@ -5,21 +5,6 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-    font: normal 100%/1.5;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    
-    background-color: #000;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
 }
 
 body {
@@ -50,18 +35,15 @@ body {
 }
 
 .clock-face:hover .hand-minute {
-    transform: rotate(0deg);
+    transform: rotate(4320deg);
 }
 
-
 .btn {
-    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .btn-forwards {
-    top: 50px;
     width: auto;
     display: inline-block;
     padding: 2em 1em;
@@ -72,7 +54,6 @@ body {
 }
 
 .btn-backwards {
-    top: 50px;
     width: auto;
     padding: 2em 1em;
     display: inline-block;
@@ -97,9 +78,8 @@ body {
     position: absolute;
     bottom: calc(50% - 7px); 
     left: calc(50% - 7px);
-    transition: all 1000ms linear;
     transform-origin: center bottom;
-    transform: rotate(4320deg);
+    transition: 6s;
 }
 
 .hand-hour {
@@ -107,6 +87,6 @@ body {
     position: absolute;
     bottom: calc(50% - 7px); 
     left: calc(50% - 7px);
-    transition: opacity 1000ms linear;
     transform-origin: center bottom;
+    transition: 3s;
 }
