@@ -42,6 +42,9 @@ body {
     position: relative;
 }
 
+.main {
+    text-align: center;
+}
 .clock-face:target .hand-hour {
     transform: rotate(360deg);
 }
@@ -51,23 +54,23 @@ body {
 }
 
 .btn-forwards {
-    height: auto;
+    width: 6em;
+    margin: 2em;
     display: inline-block;
-    padding: 2em 1em;
     background-color: green;
     border-radius: 50%; 
     color: #fff;
-    text-align: center;
+    line-height: 6em;
 }
 
 .btn-backwards {
-    height: auto;
-    padding: 2em 1em;
+    width: 6em;
+    margin: 2em;
     display: inline-block;
     background-color: red;
     border-radius: 50%; 
     color: #fff;
-    text-align: center;
+    line-height: 6em;
 }
 
 .center {
