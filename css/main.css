@@ -34,7 +34,6 @@ body {
 
 .clock-face {
     background-image: url(../images/clock-face.svg);
-    margin-top: 25px;
     width: 300px;
     height: 300px;
     margin-left: auto;
@@ -45,32 +44,39 @@ body {
 .main {
     text-align: center;
 }
-.clock-face:target .hand-hour {
-    transform: rotate(360deg);
-}
-
-.clock-face:target .hand-minute {
-    transform: rotate(4320deg);
-}
 
 .btn-forwards {
     width: 6em;
-    margin: 2em;
+    margin: 1em;
     display: inline-block;
     background-color: green;
     border-radius: 50%; 
     color: #fff;
     line-height: 6em;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.btn-forwards:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .btn-backwards {
     width: 6em;
-    margin: 2em;
+    margin: 1em;
     display: inline-block;
     background-color: red;
     border-radius: 50%; 
     color: #fff;
     line-height: 6em;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.btn-backwards:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .center {
@@ -83,7 +89,7 @@ body {
 .hand-minute {
     width: 14px;
     position: absolute;
-    bottom: calc(50% - 7px); 
+    bottom: 50%; 
     left: calc(50% - 7px);
     transform-origin: center bottom;
     transition: 6s;
@@ -92,8 +98,16 @@ body {
 .hand-hour {
     width: 14px;
     position: absolute;
-    bottom: calc(50% - 7px); 
+    bottom: 50%; 
     left: calc(50% - 7px);
     transform-origin: center bottom;
-    transition: 3s;
+    transition: 6s;
+}
+
+.clock-face:target .hand-hour {
+    transform: rotate(360deg);
+}
+
+.clock-face:target .hand-minute {
+    transform: rotate(4320deg);
 }
